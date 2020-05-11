@@ -121,3 +121,15 @@ body {
         background-position: 0% 9%
     }
 }
+
+/* ===================== HERO PICTURE ===================== */
+.hero-picture-element {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pic-pic {
+    display: grid;
+}
+
+.pic-pic img {}
