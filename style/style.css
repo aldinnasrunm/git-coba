@@ -123,13 +123,42 @@ body {
 }
 
 /* ===================== HERO PICTURE ===================== */
-.hero-picture-element {
-    margin: 0 auto;
-    text-align: center;
+.container {
+    max-width: 800px;
+    margin: 25px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
-.pic-pic {
-    display: grid;
+.tumbnail {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+
 }
 
-.pic-pic img {}
+.tumbnail img {
+    display: block;
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 5px 0px 25px 2px rgba(0, 0, 0, 0.041);
+    filter: grayscale(0.75);
+    transition: transform .2s ease-out;
+    transform: scale(1);
+
+}
+
+.tumbnail img:hover {
+    filter: grayscale(0);
+    transition: 0.4s ease-in;
+    transform: scale(1.1);
+    box-sizing: border-box;
+}
+
+@media(min-width:600px) {
+    .tumbnail {
+        width: 33.3%;
+    }
+}
