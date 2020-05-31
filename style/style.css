@@ -34,31 +34,46 @@ body {
 
 /*=========== HERO MID ==============*/
 
-.hero-txtmid {
+.container-txtmid {
     margin: 5vw 0vw;
-    height: 250px;
+    height: 350px;
     background: linear-gradient(245deg, rgb(184, 20, 6), rgb(226, 167, 254), rgb(175, 244, 138), rgb(217, 7, 211), rgb(219, 212, 112)) 0% 0% / 500% 500%;
     animation: AnimationName 14s ease infinite;
     color: white;
     text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-txtmid{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #10d884;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .txtmid-sec1 {
-    padding: 2vw 4vw 0vw 4vw;
+    margin: 20px auto;
 }
 
 .txtmid-list {
-    padding: 5vw;
-    font-size: 25px;
+    width: 800px;
+    background-color: aquamarine;
+    line-height: 2em;
+    padding: 20px 0;
+    font-size: 20px;
 }
 
 .txtmid-list ul {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
 }
 
 .txtmid-list li {
-    display: inline-block;
-    padding: 0px 105px;
+    margin: 2px auto;
 }
 
 .txtmid-list a {
@@ -161,4 +176,9 @@ body {
     .tumbnail {
         width: 33.3%;
     }
+
+    .container-txtmid {
+        height: 350px;
+    }
+
 }
